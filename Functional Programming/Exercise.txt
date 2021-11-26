@@ -1,0 +1,29 @@
+Exercise 1: In Scala, there are many ways to make an Array. 
+Think of other ways to make an Array. Write and test them to see if they work?
+
+var Method_1_array: Array[string] = Array ("red","yellow","blue")
+var Method_2_array: Array[string] = new Array[String] (3)  // array has 3 elements of type string.
+Method_2_array(0)="red"
+Method_2_array(1)="yellow"
+Method_2_array(2)="blue"
+var Method_3_array = ofDim[String](3,3) // creates and initializes a 2D 3x3 array.
+for (i <- 0 to 2) {
+for ( j <- 0 to 2) {
+    myMatrix(i)(j) = j }}
+
+Exercise 2: Set and Map collections can also be mutable. Figure out how to make them mutable?
+
+Use package "scala.collection.mutable"
+val fruits = scala.collection.mutable.SortedSet[String]()  // creates a mutable set of string type.
+fruits += "apple"
+fruits += "mango"
+
+Exercise 3: Figure out how to use Option type in a function parameter?
+
+using Option, Some and None helps to write functions with no side effects.
+def fn_abc(Name: String, age : Int, ID : Option[String]): Unit = {
+println(s"Name = $Name, age = $age")
+
+Exercise 4:Explore the higher order methods available in scala for arrays?
+
+map(), filter(), reduce(), apply() are higher order methods.
